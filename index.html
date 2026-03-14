@@ -1,242 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yogiraj Consultancy Services | Chartered Accountants & Financial Advisors</title>
-    <meta name="description"
-        content="Professional CA, GST, and Accounting services based in Ahmedabad. Expertise you can trust.">
+    <meta name="description" content="Kishan Amipara - Senior .NET Developer & Full-Stack Software Engineer">
+    <title>Kishan Amipara | Full-Stack .NET Developer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-    <nav>
-        <div class="container">
-            <a href="index.html" class="logo-container">
-                <img src="https://www.yogirajconsultancy.com/images/logo.png" alt="Yogiraj Consultancy Logo">
-            </a>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">Kishan<span>.</span></a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#downloads">Forms</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="admin.html" class="btn btn-outline"
-                        style="padding: 0.6rem 1.2rem; border-radius: 0.5rem;">Admin Panel</a></li>
             </ul>
         </div>
     </nav>
 
-    <main>
-        <!-- Luxury Hero Slider Section -->
-        <section class="hero" style="padding: 10rem 0 6rem 0; background: var(--bg-cream);">
-            <div class="containerSlider"
-                style="max-width: 1400px; margin: 0 auto; padding: 0 2rem; position: relative;">
-                <div class="slider-container">
-                    <div id="hero-slider-track" class="slider-track">
-                        <!-- Slider content injected by JS -->
-                    </div>
-                    <div id="slider-pagination" class="slider-dots">
-                        <!-- Pagination dots injected by JS -->
-                    </div>
-                </div>
-
-                <!-- Floating Info Overlay (Hero Title) -->
-                <div class="animate-reveal"
-                    style="position: absolute; top: 50%; transform: translateY(-50%); left: 10%; z-index: 5; max-width: 600px; pointer-events: none;">
-                    <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
-                        <span style="height: 2px; width: 40px; background: var(--primary);"></span>
-                        <span
-                            style="color: white; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem;">Established
-                            & Trusted</span>
-                    </div>
-                    <h1
-                        style="font-size: 4rem; margin-bottom: 1.5rem; line-height: 1.1; font-weight: 700; color: white;">
-                        Guiding Your <span style="color: var(--primary);">Financial</span> Journey</h1>
-                    <p style="color: rgba(255,255,255,0.8); font-size: 1.1rem; margin-bottom: 3rem; line-height: 1.8;">
-                        Comprehensive accounting, legal, and taxation services designed to provide clarity and growth
-                        for businesses and individuals alike.
-                    </p>
-                    <div style="display: flex; gap: 1.5rem; pointer-events: auto;">
-                        <a href="#contact" class="btn btn-primary">Book Consultation <i
-                                class="fas fa-calendar-alt"></i></a>
-                        <a href="#services" class="btn btn-hero-outline">Our Services <i
-                                class="fas fa-chevron-right"></i></a>
-                    </div>
-                </div>
-
-                <!-- Experience Badge overlaying slider -->
-                <div class="premium-card"
-                    style="position: absolute; bottom: 30px; right: 5%; z-index: 6; padding: 1.5rem; display: flex; align-items: center; gap: 1rem; pointer-events: none;">
-                    <div
-                        style="width: 50px; height: 50px; background: var(--primary); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <div>
-                        <div style="font-weight: 800; font-size: 1.25rem;">15+ Years</div>
-                        <p style="font-size: 0.8rem; color: var(--text-light);">Professional Experience</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Dynamic Services -->
-        <section id="services" style="padding: 10rem 0; background: var(--bg-white);">
-            <div class="container">
-                <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 5rem;">
-                    <div>
-                        <h2 style="font-size: 3rem; margin-bottom: 1rem;">Solutions We Offer</h2>
-                        <p style="color: var(--text-light); font-size: 1.1rem;">Precision-driven services to manage your
-                            business compliance.</p>
-                    </div>
-                    <a href="#contact"
-                        style="color: var(--primary); font-weight: 700; text-decoration: none; border-bottom: 2px solid var(--primary);">View
-                        All Expertise <i class="fas fa-long-arrow-right"></i></a>
-                </div>
-
-                <div id="services-grid"
-                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2.5rem;">
-                    <!-- Dynamically populated from JS -->
-                </div>
-            </div>
-        </section>
-
-        <!-- Resources Section -->
-        <section id="downloads" style="padding: 10rem 0; background: #fdfaf5;">
-            <div class="container"
-                style="display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center;">
-                <div>
-                    <h2 style="font-size: 3rem; margin-bottom: 2rem;">Digital Library</h2>
-                    <p style="color: var(--text-light); font-size: 1.1rem; margin-bottom: 3rem;">
-                        Instant access to all essential forms and regulatory documents required for your filings. We
-                        keep our repository updated with the latest government standards.
-                    </p>
-                    <div id="downloads-list" style="display: grid; gap: 1.5rem;">
-                        <!-- Dynamically populated -->
-                    </div>
-                </div>
-                <div
-                    style="background: var(--bg-white); padding: 4rem; border-radius: 2.5rem; box-shadow: var(--shadow-soft);">
-                    <img src="https://www.yogirajconsultancy.com/images/logo.png"
-                        style="width: 200px; margin-bottom: 2rem; opacity: 0.3;">
-                    <h3 style="margin-bottom: 1.5rem;">Compliance Tracking</h3>
-                    <div style="display: flex; gap: 1.5rem; margin-bottom: 1.5rem; align-items: center;">
-                        <i class="fas fa-check-circle" style="color: #10b981; font-size: 1.5rem;"></i>
-                        <p>Real-time status tracking via official portals</p>
-                    </div>
-                    <div style="display: flex; gap: 1.5rem; margin-bottom: 1.5rem; align-items: center;">
-                        <i class="fas fa-check-circle" style="color: #10b981; font-size: 1.5rem;"></i>
-                        <p>Certified digital signature assistance</p>
-                    </div>
-                    <div style="display: flex; gap: 1.5rem; align-items: center;">
-                        <i class="fas fa-check-circle" style="color: #10b981; font-size: 1.5rem;"></i>
-                        <p>Secure document archival</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" style="padding: 10rem 0; background: var(--bg-dark);">
-            <div class="container">
-                <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 5rem;">
-                    <div style="color: white;">
-                        <h2 style="color: white; font-size: 3rem; margin-bottom: 2rem;">Let's Talk <span
-                                style="color: var(--primary);">Strategy</span></h2>
-                        <p style="color: #94a3b8; margin-bottom: 4rem; font-size: 1.1rem;">Reach out for specialized
-                            advice on taxation, legal structure, or wealth management.</p>
-
-                        <div style="display: grid; gap: 2rem;">
-                            <div style="display: flex; gap: 1.5rem; align-items: center;">
-                                <div
-                                    style="width: 60px; height: 60px; border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
-                                    <i class="fas fa-phone-alt"></i>
-                                </div>
-                                <div>
-                                    <div style="font-size: 0.8rem; color: #94a3b8; text-transform: uppercase;">Call Us
-                                    </div>
-                                    <div style="font-weight: 600;">+91-9428115340</div>
-                                </div>
-                            </div>
-                            <div style="display: flex; gap: 1.5rem; align-items: center;">
-                                <div
-                                    style="width: 60px; height: 60px; border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div>
-                                    <div style="font-size: 0.8rem; color: #94a3b8; text-transform: uppercase;">Email Us
-                                    </div>
-                                    <div style="font-weight: 600;">yogirajconsultancy11@gmail.com</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style="background: white; padding: 4rem; border-radius: 2.5rem;">
-                        <form id="contact-form" style="display: grid; gap: 1.5rem;">
-                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                                <div>
-                                    <label
-                                        style="display: block; font-size: 0.8rem; margin-bottom: 0.5rem; font-weight: 600;">FULL
-                                        NAME</label>
-                                    <input type="text" placeholder="John Doe"
-                                        style="width: 100%; padding: 1rem; border: 1px solid #e2e8f0; border-radius: 0.5rem;"
-                                        required>
-                                </div>
-                                <div>
-                                    <label
-                                        style="display: block; font-size: 0.8rem; margin-bottom: 0.5rem; font-weight: 600;">EMAIL
-                                        ADDRESS</label>
-                                    <input type="email" placeholder="john@example.com"
-                                        style="width: 100%; padding: 1rem; border: 1px solid #e2e8f0; border-radius: 0.5rem;"
-                                        required>
-                                </div>
-                            </div>
-                            <div>
-                                <label
-                                    style="display: block; font-size: 0.8rem; margin-bottom: 0.5rem; font-weight: 600;">HOW
-                                    CAN WE HELP?</label>
-                                <select
-                                    style="width: 100%; padding: 1rem; border: 1px solid #e2e8f0; border-radius: 0.5rem;">
-                                    <option>GST Consultancy</option>
-                                    <option>Tax Planning</option>
-                                    <option>Audit Services</option>
-                                    <option>Other</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label
-                                    style="display: block; font-size: 0.8rem; margin-bottom: 0.5rem; font-weight: 600;">MESSAGE</label>
-                                <textarea rows="4" placeholder="Tell us about your needs..."
-                                    style="width: 100%; padding: 1rem; border: 1px solid #e2e8f0; border-radius: 0.5rem;"
-                                    required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary" style="justify-content: center;">Send Message
-                                <i class="fas fa-paper-plane"></i></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer
-        style="padding: 5rem 0; background: var(--bg-dark); color: white; border-top: 1px solid rgba(255,255,255,0.05);">
-        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
-            <img src="https://www.yogirajconsultancy.com/images/logo.png"
-                style="height: 40px; filter: grayscale(1) brightness(10);">
-            <p style="color: #94a3b8; font-size: 0.9rem;">© 2026 Yogiraj Consultancy Services. Compliance Simplified.
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        
+        <div class="hero-content">
+            <p class="greeting">Hi, I am</p>
+            <h1 class="name">Kishan Amipara</h1>
+            <h2 class="title">I build <span class="typing-text"></span><span class="cursor">|</span></h2>
+            <p class="hero-description">
+                A Senior .NET Developer & Full-Stack Engineer specializing in scalable enterprise applications, cloud solutions, and driving digital transformation for businesses.
             </p>
-            <div style="display: flex; gap: 1.5rem;">
-                <a href="#" style="color: #94a3b8;"><i class="fab fa-linkedin"></i></a>
-                <a href="#" style="color: #94a3b8;"><i class="fab fa-twitter"></i></a>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Start a Project</a>
+                <a href="#about" class="btn btn-secondary">Discover My Work</a>
             </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container column-layout">
+            <div class="about-text">
+                <h2 class="section-title">About <span>Me</span></h2>
+                <p>
+                    I am a passionate software engineer with extensive experience in the Microsoft technology stack. My expertise lies in designing, developing, and deploying robust backend architectures and seamless frontend experiences. 
+                </p>
+                <p>
+                    Currently, I am focused on <strong>creating my own business solutions</strong> and offering premium software consultancy. Whether it's architecting a complex system from scratch, migrating legacy VB.NET applications to modern .NET Core, or deploying scalable solutions on Azure, I deliver high-quality, maintainable code that drives business success.
+                </p>
+                <div class="stats-container">
+                    <div class="stat-box">
+                        <h3>Full-Stack</h3>
+                        <p>Developer</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Consultancy</h3>
+                        <p>& Business Solutions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title centered">Tech <span>Arsenal</span></h2>
+            <div class="skills-grid">
+                
+                <div class="skill-card">
+                    <i class="fa-brands fa-microsoft"></i>
+                    <h3>.NET Ecosystem</h3>
+                    <p>ASP.NET Core, ASP.NET MVC, VB .NET, C#, Entity Framework</p>
+                </div>
+                
+                <div class="skill-card">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>Frontend</h3>
+                    <p>JavaScript, HTML5, CSS3, Responsive Design</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>Databases</h3>
+                    <p>SQL Server, Relational Database Design, Optimization</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-windows"></i>
+                    <h3>Cloud & Deployment</h3>
+                    <p>Microsoft Azure, CI/CD, App Services, Functions</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Business Focus Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title centered">What I <span>Offer</span></h2>
+            <p class="section-subtitle">Partner with me to elevate your business through technology.</p>
+            
+            <div class="services-list">
+                <div class="service-item">
+                    <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <div class="service-details">
+                        <h3>Custom Software Development</h3>
+                        <p>End-to-end development of bespoke web applications tailored to your business needs using cutting-edge .NET technologies.</p>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon"><i class="fa-solid fa-server"></i></div>
+                    <div class="service-details">
+                        <h3>System Architecture & APIs</h3>
+                        <p>Designing scalable, secure, and performant RESTful APIs and microservices architectures.</p>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                    <div class="service-details">
+                        <h3>Cloud Migration</h3>
+                        <p>Seamlessly transitioning legacy on-premise applications to Azure cloud infrastructure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container column-layout">
+            <div class="contact-info">
+                <h2 class="section-title">Let's <span>Connect</span></h2>
+                <p>Ready to bring your ideas to life or scale your existing business? Let's discuss how my expertise can help you achieve your goals.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-line">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>hello@kishanamipara.com</span>
+                    </div>
+                    <div class="contact-line">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Working Worldwide</span>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary submit-btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Kishan Amipara. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
