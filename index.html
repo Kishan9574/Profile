@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogiraj Consultancy Services | Chartered Accountants & Financial Advisors</title>
+    <meta name="description"
+        content="Professional CA, GST, and Accounting services based in Ahmedabad. Expertise you can trust.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo-container">
+                <img src="https://www.yogirajconsultancy.com/images/logo.png" alt="Yogiraj Consultancy Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#downloads">Forms</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="admin.html" class="btn btn-outline"
+                        style="padding: 0.6rem 1.2rem; border-radius: 0.5rem;">Admin Panel</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Luxury Hero Slider Section -->
+        <section class="hero" style="padding: 10rem 0 6rem 0; background: var(--bg-cream);">
+            <div class="containerSlider"
+                style="max-width: 1400px; margin: 0 auto; padding: 0 2rem; position: relative;">
+                <div class="slider-container">
+                    <div id="hero-slider-track" class="slider-track">
+                        <!-- Slider content injected by JS -->
+                    </div>
+                    <div id="slider-pagination" class="slider-dots">
+                        <!-- Pagination dots injected by JS -->
+                    </div>
+                </div>
+
+                <!-- Floating Info Overlay (Hero Title) -->
+                <div class="animate-reveal"
+                    style="position: absolute; top: 50%; transform: translateY(-50%); left: 10%; z-index: 5; max-width: 600px; pointer-events: none;">
+                    <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
+                        <span style="height: 2px; width: 40px; background: var(--primary);"></span>
+                        <span
+                            style="color: white; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem;">Established
+                            & Trusted</span>
+                    </div>
+                    <h1
+                        style="font-size: 4rem; margin-bottom: 1.5rem; line-height: 1.1; font-weight: 700; color: white;">
+                        Guiding Your <span style="color: var(--primary);">Financial</span> Journey</h1>
+                    <p style="color: rgba(255,255,255,0.8); font-size: 1.1rem; margin-bottom: 3rem; line-height: 1.8;">
+                        Comprehensive accounting, legal, and taxation services designed to provide clarity and growth
+                        for businesses and individuals alike.
+                    </p>
+                    <div style="display: flex; gap: 1.5rem; pointer-events: auto;">
+                        <a href="#contact" class="btn btn-primary">Book Consultation <i
+                                class="fas fa-calendar-alt"></i></a>
+                        <a href="#services" class="btn btn-hero-outline">Our Services <i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Experience Badge overlaying slider -->
+                <div class="premium-card"
+                    style="position: absolute; bottom: 30px; right: 5%; z-index: 6; padding: 1.5rem; display: flex; align-items: center; gap: 1rem; pointer-events: none;">
+                    <div
+                        style="width: 50px; height: 50px; background: var(--primary); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div>
+                        <div style="font-weight: 800; font-size: 1.25rem;">15+ Years</div>
+                        <p style="font-size: 0.8rem; color: var(--text-light);">Professional Experience</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Services -->
+        <section id="services" style="padding: 10rem 0; background: var(--bg-white);">
+            <div class="container">
+                <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 5rem;">
+                    <div>
+                        <h2 style="font-size: 3rem; margin-bottom: 1rem;">Solutions We Offer</h2>
+                        <p style="color: var(--text-light); font-size: 1.1rem;">Precision-driven services to manage your
+                            business compliance.</p>
+                    </div>
+                    <a href="#contact"
+                        style="color: var(--primary); font-weight: 700; text-decoration: none; border-bottom: 2px solid var(--primary);">View
+                        All Expertise <i class="fas fa-long-arrow-right"></i></a>
+                </div>
+
+                <div id="services-grid"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2.5rem;">
+                    <!-- Dynamically populated from JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="downloads" style="padding: 10rem 0; background: #fdfaf5;">
+            <div class="container"
+                style="display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center;">
+                <div>
+                    <h2 style="font-size: 3rem; margin-bottom: 2rem;">Digital Library</h2>
+                    <p style="color: var(--text-light); font-size: 1.1rem; margin-bottom: 3rem;">
+                        Instant access to all essential forms and regulatory documents required for your filings. We
+                        keep our repository updated with the latest government standards.
+                    </p>
+                    <div id="downloads-list" style="display: grid; gap: 1.5rem;">
+                        <!-- Dynamically populated -->
+                    </div>
+                </div>
+                <div
+                    style="background: var(--bg-white); padding: 4rem; border-radius: 2.5rem; box-shadow: var(--shadow-soft);">
+                    <img src="https://www.yogirajconsultancy.com/images/logo.png"
+                        style="width: 200px; margin-bottom: 2rem; opacity: 0.3;">
+                    <h3 style="margin-bottom: 1.5rem;">Compliance Tracking</h3>
+                    <div style="display: flex; gap: 1.5rem; margin-bottom: 1.5rem; align-items: center;">
+                        <i class="fas fa-check-circle" style="color: #10b981; font-size: 1.5rem;"></i>
+                        <p>Real-time status tracking via official portals</p>
+                    </div>
+                    <div style="display: flex; gap: 1.5rem; margin-bottom: 1.5rem; align-items: center;">
+                        <i class="fas fa-check-circle" style="color: #10b981; font-size: 1.5rem;"></i>
+                        <p>Certified digital signature assistance</p>
+                    </div>
+                    <div style="display: flex; gap: 1.5rem; align-items: center;">
+                        <i class="fas fa-check-circle" style="color: #10b981; font-size: 1.5rem;"></i>
+                        <p>Secure document archival</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" style="padding: 10rem 0; background: var(--bg-dark);">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 5rem;">
+                    <div style="color: white;">
+                        <h2 style="color: white; font-size: 3rem; margin-bottom: 2rem;">Let's Talk <span
+                                style="color: var(--primary);">Strategy</span></h2>
+                        <p style="color: #94a3b8; margin-bottom: 4rem; font-size: 1.1rem;">Reach out for specialized
+                            advice on taxation, legal structure, or wealth management.</p>
+
+                        <div style="display: grid; gap: 2rem;">
+                            <div style="display: flex; gap: 1.5rem; align-items: center;">
+                                <div
+                                    style="width: 60px; height: 60px; border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <div style="font-size: 0.8rem; color: #94a3b8; text-transform: uppercase;">Call Us
+                                    </div>
+                                    <div style="font-weight: 600;">+91-9428115340</div>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 1.5rem; align-items: center;">
+                                <div
+                                    style="width: 60px; height: 60px; border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <div style="font-size: 0.8rem; color: #94a3b8; text-transform: uppercase;">Email Us
+                                    </div>
+                                    <div style="font-weight: 600;">yogirajconsultancy11@gmail.com</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: white; padding: 4rem; border-radius: 2.5rem;">
+                        <form id="contact-form" style="display: grid; gap: 1.5rem;">
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                <div>
+                                    <label
+                                        style="display: block; font-size: 0.8rem; margin-bottom: 0.5rem; font-weight: 600;">FULL
+                                        NAME</label>
+                                    <input type="text" placeholder="John Doe"
+                                        style="width: 100%; padding: 1rem; border: 1px solid #e2e8f0; border-radius: 0.5rem;"
+                                        required>
+                                </div>
+                                <div>
+                                    <label
+                                        style="display: block; font-size: 0.8rem; margin-bottom: 0.5rem; font-weight: 600;">EMAIL
+                                        ADDRESS</label>
+                                    <input type="email" placeholder="john@example.com"
+                                        style="width: 100%; padding: 1rem; border: 1px solid #e2e8f0; border-radius: 0.5rem;"
+                                        required>
+                                </div>
+                            </div>
+                            <div>
+                                <label
+                                    style="display: block; font-size: 0.8rem; margin-bottom: 0.5rem; font-weight: 600;">HOW
+                                    CAN WE HELP?</label>
+                                <select
+                                    style="width: 100%; padding: 1rem; border: 1px solid #e2e8f0; border-radius: 0.5rem;">
+                                    <option>GST Consultancy</option>
+                                    <option>Tax Planning</option>
+                                    <option>Audit Services</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label
+                                    style="display: block; font-size: 0.8rem; margin-bottom: 0.5rem; font-weight: 600;">MESSAGE</label>
+                                <textarea rows="4" placeholder="Tell us about your needs..."
+                                    style="width: 100%; padding: 1rem; border: 1px solid #e2e8f0; border-radius: 0.5rem;"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="justify-content: center;">Send Message
+                                <i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer
+        style="padding: 5rem 0; background: var(--bg-dark); color: white; border-top: 1px solid rgba(255,255,255,0.05);">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <img src="https://www.yogirajconsultancy.com/images/logo.png"
+                style="height: 40px; filter: grayscale(1) brightness(10);">
+            <p style="color: #94a3b8; font-size: 0.9rem;">© 2026 Yogiraj Consultancy Services. Compliance Simplified.
+            </p>
+            <div style="display: flex; gap: 1.5rem;">
+                <a href="#" style="color: #94a3b8;"><i class="fab fa-linkedin"></i></a>
+                <a href="#" style="color: #94a3b8;"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
